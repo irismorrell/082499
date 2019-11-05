@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+/* <![CDATA[ */
+body {
+ background: #f5ebbf;
+ color: #020203;
+ margin: 0 24pt 0 24pt;
+ font-family: Arial;
+ font-size: 13pt;
+}
+@keyframes fadein{
+  from {
+    opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+}
+img {
+  animation: fadein 5s;
+  width: 400px;
+}
+a {
+ color: #117;
+ text-decoration: none;
+}
+/* ]]> */
+</style>
+<script type="text/javascript">
+// will pick a random number between 0 and 10, and can be called 10 times
+var images = null;
+var bucket = null;
+function produce_memoir () {
+  //Hide all images
+  //jsfiddle.net/#run  //var audios = document.getElementsByTagName('audio');
+  //var index = Math.floor(Math.random() * audios.length);
+  //var audio = audios[index]
+  //audio.style.display = '';
+  
+  for (var i=0;i<=0;i++) {
+     var randomIndex = Math.floor(Math.random()*bucket.length);
+     var number = bucket.splice(randomIndex, 1) [0];
+     var image = images[number];
+     document.body.appendChild(image);
+     image.style.display='';
+  }
+}
+function produce_newmemoir() {
+  images = [...document.getElementsByTagName('img')];
+  images = images.concat([...document.getElementsByTagName('audio')]);
+  console.log(images.length);
+  bucket = [];
+  for (var i=0;i<=images.length;i++) {
+    bucket.push(i);
+  }
+  for (var i = 0; i < images.length; i++) {
+    images[i].remove();
+  }
+  produce_memoir();
+  setInterval(produce_memoir, 4000);
+}
+</script>
+  <title>08/24/99</title>
+</head>
+<body onload="produce_newmemoir();">
+<br>08/24/99<br>Iris Morrell<br><a href="https://docs.google.com/document/d/19HP1gf-43TtIcBHIhzMJEuU-6yiiCatV7fcWnMMCcgw/edit?usp=sharing">Artist's Statement</a><br>
+<audio controls style="display:none;">
+<source src = "https://irismorrell.github.io/082499/mom interview 1 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 2 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/dad interview 1 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/dad interview 2 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/dad interview 3 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/dad interview 4 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/dad interview 5 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 3 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 4 2.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 5 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 6.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 7.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 8.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 9 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 10.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 11.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 12 1.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 13.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 14.m4a"></audio>
+<audio controls style="display:none;">
+<source src="https://irismorrell.github.io/082499/mom interview 15 1.m4a"></audio>
+<img src="https://irismorrell.github.io/082499/1999-09-01 04.22.54-1.gif" style="display:none;">
+<img src="https://irismorrell.github.io/082499/1999-09-01 04.22.58-1.gif" style="display:none;">
+<img src="https://irismorrell.github.io/082499/1999-09-01 04.22.58-2.gif" style="display:none;">
+<img src="https://irismorrell.github.io/082499/1999-09-01 04.23.00-1.gif" style= "display:none;">
+<img src="https://irismorrell.github.io/082499/Harley Bierman letter page 1.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/Harley Bierman letter page 2.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/I'm a Girl.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/Maggie contact email.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/birth certificate.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/UCSF Women's Health library card.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/UCSF pediatricians list.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/birth plan.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/bouncy seat images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/breastfeeding care plan.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/call list.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/card from Aunt Sandra.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/card from Bill and Donna 1.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/card from Bill and Donna 2.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/card from Maggie.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/displeasure images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/draft birth plan.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/first bath images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/foot prints.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/gift list.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/going home images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/hospital confirmation letter.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/labor and arrival images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/note from Aunt Sandra.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/note from Bill and Donna 1.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/note from Bill and Donna 2.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/note from Maggie envelope.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/note from Maggie.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/pediatrician invoice.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/pediatrician receipts.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/pediatrician referral.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/peering out images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/prescription receipt.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/recumbent images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/ultrasound images.jpg" style="display:none;">
+<img src="https://irismorrell.github.io/082499/email from grandma.pdf" style="width: 225px; display:none;">
+</body>
+</html>
